@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | La chaqueta de Otto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="../img/Otto.png" />
+  </head>
+  <body>
+    <header>
+      <h1>LA CHAQUETA DE OTTO</h1>
+      <img src="../img/Otto.png" alt="Otto con un bong" width="120" />
+      <h2>Tienda online de productos de cultivo de primera calidad.</h2>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+         <section id="contacto">
+        <h3>¡Contáctenos!</h3>
+        <p>
+          Déjenos una consulta con sus datos y lo contactaremos a la brevedad.
+        </p>
+        <form action="https://formspree.io/f/maenlzyv" method="POST">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://tav087.github.io/Proyecto-curso-front/pages/gracias.html"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/gracias.html"
+          />
+          <!--No redirige hacia la pagina de agradecimiento porque es el plan gratuito de formspree-->
+
+          <label for="nombre">Nombre:</label>
+
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="mail">Correo electrónico:</label>
+
+          <input type="email" id="mail" name="mail" required />
+
+          <label for="mensaje">Ingrese su consulta o mensaje:</label>
+
+          <textarea id="mensaje" name="mensaje"></textarea>
+
+          <button type="submit">
+            <strong><em>Enviar</em></strong>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+         <p>
+        <strong><em>Desarrollado por: </em></strong>Gustavo Luna
+      </p>
+      <p>
+        <strong><em>Contacto: </em></strong>gsluna87@gmail.com
+      </p>
+      <p>
+        <strong
+          ><em
+            >© 2026 La chaqueta de Otto. Todos los derechos reservados.</em
+          ></strong
+        >
+      </p>
+    </footer>
+  </body>
+</html>
